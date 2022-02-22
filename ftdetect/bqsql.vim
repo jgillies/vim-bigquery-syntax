@@ -1,2 +1,2 @@
-" ftdetect/sql.vim
-autocmd BufNewFile,BufRead *.sql setfiletype bqsql
+" ftdetect/bqsql.vim
+autocmd BufNewFile,BufRead *.sql setfiletype sql.bqsql
