@@ -29,7 +29,7 @@ syntax match sqlFunction "\<\(bool\|int64\|float64\|json_type\)(\@="
 
 " array functions
 syntax match sqlFunction "\<\(array\|array_concat\|array_length\|array_to_string\|generate_array\)(\@="
-syntax match sqlFunction "\<\(generate_date_array\|generat_timestamp_array\|array_revers\)(\@="
+syntax match sqlFunction "\<\(generate_date_array\|generate_timestamp_array\|array_reverse\)(\@="
 
 " date functions
 syntax match sqlFunction "\<\(current_date\|extract\|date\|date_add\|date_sub\|date_diff\|date_trunc\)(\@="
@@ -50,11 +50,37 @@ syntax match sqlFunction "\<\(unix_seconds\|unix_millis\|unix_micros\)(\@="
 " interval functions
 syntax match sqlFunction "\<\(make_interval\|extract\|justify_days\|justify_hours\|justify_interval\)(\@="
 
+" aggregate functions
+syntax match sqlFunction "\<\(any_value\|array_agg\|array_concat_agg\|avg\|bit_and\)(\@="
+syntax match sqlFunction "\<\(bit_or\|bit_xor\|count\|countif\|logical_and\)(\@="
+syntax match sqlFunction "\<\(logical_or\|max\|min\|string_agg\|sum\)(\@="
+
+" Statistical aggregate functions
+syntax match sqlFunction "\<\(corr\|covar_pop\|covar_samp\|stddev_pop\|stddev_samp\)(\@="
+syntax match sqlFunction "\<\(stddev\|var_pop\|var_samp\|variance\)(\@="
+
+" Approximate aggregate functions
+syntax match sqlFunction "\<\(approx_count_distinct\|approx_quantiles\|approx_top_count\|approx_top_sum\)(\@="
+
+" Numbering functions
+syntax match sqlFunction "\<\(rank\|dense_rank\|percent_rank\|cume_dist\)(\@="
+syntax match sqlFunction "\<\(ntile\|row_number\)(\@="
+
+" Navigation functions
+syntax match sqlFunction "\<\(first_value\|last_value\|nth_value\|lead\)(\@="
+syntax match sqlFunction "\<\(percentile_cont\|percentile_disc\)(\@="
+
+" hash functions
+syntax match sqlFunction "\<\(farm_fingerprint\|md5\|sha1\|sha256\|sha512\)(\@="
+
+" misc functions
+syntax match sqlFunction "\<\(cast\|bit_count\|parse_bignumeric\|parse_numeric\|safe_cast\)(\@="
+
 " intervals 
 syntax match sqlIntervals "\<\(month\|week\|day\|year\|minute\|hour\|second\))\@="
 
 " keywords
-syntax keyword sqlKeywords interval
+syntax keyword sqlKeywords interval partition
 
 highlight link sqlFunction Function
 highlight link sqlIntervals Identifier
