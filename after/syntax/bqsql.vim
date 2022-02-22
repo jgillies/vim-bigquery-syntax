@@ -51,7 +51,7 @@ syntax match sqlFunction "\<\(unix_seconds\|unix_millis\|unix_micros\)(\@="
 syntax match sqlFunction "\<\(make_interval\|extract\|justify_days\|justify_hours\|justify_interval\)(\@="
 
 " intervals 
-syntax match sqlIntervals "\<\(month\|day\|year\|minute\|hour\|second\))\@="
+syntax match sqlIntervals "\<\(month\|week\|day\|year\|minute\|hour\|second\))\@="
 
 " keywords
 syntax keyword sqlKeywords interval
