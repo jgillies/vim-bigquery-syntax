@@ -19,7 +19,7 @@ syntax match sqlFunction "\<\(regexp_contains\|regexp_extract\|regexp_extract_al
 syntax match sqlFunction "\<\(regexp_replace\|replace\|repeat\|reverse\|right\|rpad\|rtrim\)(\@="
 syntax match sqlFunction "\<\(safe_convert_bytes_to_string\|soundex\|split\|starts_with\|strpos\)(\@="
 syntax match sqlFunction "\<\(substr\|substring\|to_base32\|to_base64\|to_code_points\|to_hex\|translate\)(\@="
-syntax match sqlFunction "\<\(trim\|unicode\|upper\)(\@="
+syntax match sqlFunction "\<\(trim\|unicode\|upper\|nullif\|ifnull\)(\@="
 
 " json functions
 syntax match sqlFunction "\<\(json_extract\|json_query\|json_extract_scalar\|json_value\)(\@="
